@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import UIKit
+
+protocol AnyView {
+    var presenter: AnyPresenter? {get set}
+}
+
+class View: UIViewController, AnyView {
+    var presenter: (any AnyPresenter)?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+}

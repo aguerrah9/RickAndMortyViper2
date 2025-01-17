@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol AnyRouter {
+    
+}
+
+class Router: AnyRouter {
+    
+}
